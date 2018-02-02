@@ -25,10 +25,10 @@
     "homepage": "http://www.flagwind.org",
     "repository": {
         "type": "git",
-        "url": "https://github.com/flagwind/flagwind-web"
+        "url": "https://github.com/flagwind/flagwind-echarts"
     },
     "bugs": {
-        "url": "https://github.com/flagwind/flagwind-web/issues"
+        "url": "https://github.com/flagwind/flagwind-echarts/issues"
     },
     "dependencies": {
         "echarts": "^4.0.2",
