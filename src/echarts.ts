@@ -8,7 +8,7 @@
 
 import Vue from "vue";
 import echarts from "echarts";
-// import debounce from "lodash/debounce";
+import debounce from "lodash.debounce";
 import { component, config, watch, Component } from "flagwind-web";
 
 const ACTION_EVENTS =
@@ -178,7 +178,7 @@ export default class ECharts extends Component
     }
     
     /**
-     * 获取 ECharts 实例中维护的 options 对象。
+     * 获取 ECharts 实例维护的 options 对象。
      * @public
      * @property
      * @returns Object
@@ -481,16 +481,11 @@ export default class ECharts extends Component
 
         if(this.autoResize)
         {
-            // this._resizeHanlder = debounce(() =>
-            // {
-            //     chart.resize();
-
-            // }, 100, { leading: true });
-            
-            this._resizeHanlder = () =>
+            this._resizeHanlder = debounce(() =>
             {
                 chart.resize();
-            };
+
+            }, 100, { leading: true });
 
             window.addEventListener("resize", this._resizeHanlder);
         }

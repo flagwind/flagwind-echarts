@@ -13,8 +13,8 @@ module.exports = merge(webpackBaseConfig,
     {
         path: path.resolve(__dirname, "../dist"),
         publicPath: "/dist/",
-        filename: "flagwind-web.min.js",
-        library: "flagwind-web",
+        filename: "flagwind-echarts.min.js",
+        library: "flagwind-echarts",
         libraryTarget: "umd",
         umdNamedDefine: true
     },

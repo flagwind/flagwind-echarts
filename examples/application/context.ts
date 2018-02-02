@@ -80,7 +80,7 @@ export default class ApplicationContext extends ApplicationContextBase
      */
     protected constructor()
     {
-        super("flagwind-web");
+        super("flagwind-echarts");
     }
 
     /**
